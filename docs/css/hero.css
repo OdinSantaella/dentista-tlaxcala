@@ -9,10 +9,10 @@
     overflow: hidden;
     background:
         linear-gradient(135deg,
-            rgba(27, 73, 101, 0.72),
-            rgba(42, 95, 127, 0.68)
+            rgba(27, 73, 101, 0.65),
+            rgba(42, 95, 127, 0.60)
         ),
-        url('../img/hero-terapia-autismo-tlaxcala.webp');
+        url('../img/consultorio-dentista-elizabeth-tlaxcala.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -79,7 +79,7 @@
     color: white;
     line-height: 1.2;
     margin-bottom: 20px;
-    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .hero h1 .highlight {
@@ -95,6 +95,7 @@
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .cta-container {
@@ -147,53 +148,16 @@
     color: var(--secondary-color);
 }
 
-.trust-bar {
-    background: white;
-    padding: 25px 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.trust-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px;
-}
-
-.trust-icon {
-    font-size: 24px;
-    color: var(--primary-color);
-    flex-shrink: 0;
-}
-
-.trust-text {
-    text-align: left;
-    font-size: 14px;
-    line-height: 1.4;
-    color: var(--text-gray);
-}
-
-.trust-text strong {
-    display: block;
-    font-weight: 600;
-    color: var(--primary-color);
-}
 
 @media (max-width: 768px) {
     .hero {
         min-height: 85vh;
         background:
             linear-gradient(135deg,
-                rgba(27, 73, 101, 0.72),
-                rgba(42, 95, 127, 0.68)
+                rgba(27, 73, 101, 0.65),
+                rgba(42, 95, 127, 0.60)
             ),
-            url('../img/hero-terapia-autismo-tlaxcala.webp') ;
+            url('../img/consultorio-dentista-elizabeth-tlaxcala.webp') ;
         background-size: cover ;
         background-position: center ;
         background-repeat: no-repeat ;
@@ -218,43 +182,133 @@
         flex-direction: column;
         padding: 0 10px;
     }
-    .trust-bar {
-        grid-template-columns: 1fr;
-        gap: 5px;
-        padding: 10px 20px;
-    }
-
-    .trust-item {
-        justify-content: flex-start;
-    }
 }
 
 /* ========================================
-   FALLBACK PARA NAVEGADORES SIN WEBP
+   TRUST BAR SECTION
 ======================================== */
+.trust-section {
+    background: var(--light-gray);
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.trust-section h2 {
+    font-size: 36px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.trust-section .section-subtitle {
+    font-size: 18px;
+    color: var(--text-gray);
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trust-bar {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.trust-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.trust-item:hover {
+    transform: translateY(-5px);
+}
+
+.trust-icon {
+    font-size: 32px;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.trust-text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--text-gray);
+}
+
+.trust-text strong {
+    display: block;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+/* Fallback para navegadores sin WebP */
 .no-webp .hero {
     background:
         linear-gradient(135deg,
-            rgba(27, 73, 101, 0.72),
-            rgba(42, 95, 127, 0.68)
+            rgba(27, 73, 101, 0.65),
+            rgba(42, 95, 127, 0.60)
         ),
-        url('../img/hero-terapia-autismo-tlaxcala.jpg') ;
+        url('../img/consultorio-dentista-elizabeth-tlaxcala.jpg') ;
     background-size: cover ;
     background-position: center ;
     background-repeat: no-repeat ;
 }
 
-/* Fallback WebP en mobile */
 @media (max-width: 768px) {
     .no-webp .hero {
         background:
             linear-gradient(135deg,
-                rgba(27, 73, 101, 0.72),
-                rgba(42, 95, 127, 0.68)
+                rgba(27, 73, 101, 0.65),
+                rgba(42, 95, 127, 0.60)
             ),
-            url('../img/hero-terapia-autismo-tlaxcala.jpg') ;
+            url('../img/consultorio-dentista-elizabeth-tlaxcala.jpg') ;
         background-size: cover ;
         background-position: center ;
         background-repeat: no-repeat ;
+    }
+
+    .trust-section {
+        padding: 50px 20px;
+    }
+
+    .trust-section h2 {
+        font-size: 28px;
+    }
+
+    .trust-bar {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 25px 20px;
+    }
+
+    .trust-item {
+        gap: 12px;
+        padding: 15px;
+    }
+
+    .trust-icon {
+        font-size: 28px;
+    }
+
+    .trust-text {
+        font-size: 13px;
+    }
+
+    .trust-text strong {
+        font-size: 14px;
     }
 }
