@@ -8,9 +8,9 @@
     align-items: center;
     overflow: hidden;
     background:
-        linear-gradient(135deg, 
-            rgba(90, 185, 181, 0.68),
-            rgba(109, 181, 216, 0.63)
+        linear-gradient(135deg,
+            rgba(27, 73, 101, 0.72),
+            rgba(42, 95, 127, 0.68)
         ),
         url('../img/hero-terapia-autismo-tlaxcala.webp');
     background-size: cover;
@@ -121,28 +121,30 @@
 }
 
 .btn-primary {
-    background: #FFD93D;
-    color: #2B3A42;
-    border: 2px solid #FFD93D;
+    background: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color);
     font-weight: 700;
 }
 
 .btn-primary:hover {
-    background: #FFC620;
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
     transform: translateY(-2px);
-    box-shadow: 0 6px 25px rgba(255, 217, 61, 0.5);
+    box-shadow: 0 6px 25px rgba(90, 185, 181, 0.5);
 }
 
 .btn-secondary {
     background: white;
-    color: #5AB9B5;
+    color: var(--primary-color);
     border: 2px solid white;
 }
 
 .btn-secondary:hover {
     background: rgba(255, 255, 255, 0.9);
     transform: translateY(-2px);
-    border-color: #FFB3D9;
+    border-color: var(--accent-color);
+    color: var(--secondary-color);
 }
 
 .trust-bar {
@@ -166,7 +168,7 @@
 
 .trust-icon {
     font-size: 24px;
-    color: #5AB9B5;
+    color: var(--primary-color);
     flex-shrink: 0;
 }
 
@@ -174,13 +176,13 @@
     text-align: left;
     font-size: 14px;
     line-height: 1.4;
-    color: #2B3A42;
+    color: var(--text-gray);
 }
 
 .trust-text strong {
     display: block;
     font-weight: 600;
-    color: #5AB9B5;
+    color: var(--primary-color);
 }
 
 @media (max-width: 768px) {
@@ -188,8 +190,8 @@
         min-height: 85vh;
         background:
             linear-gradient(135deg,
-                rgba(90, 185, 181, 0.68),
-                rgba(109, 181, 216, 0.63)
+                rgba(27, 73, 101, 0.72),
+                rgba(42, 95, 127, 0.68)
             ),
             url('../img/hero-terapia-autismo-tlaxcala.webp') ;
         background-size: cover ;
@@ -233,8 +235,8 @@
 .no-webp .hero {
     background:
         linear-gradient(135deg,
-            rgba(90, 185, 181, 0.68),
-            rgba(109, 181, 216, 0.63)
+            rgba(27, 73, 101, 0.72),
+            rgba(42, 95, 127, 0.68)
         ),
         url('../img/hero-terapia-autismo-tlaxcala.jpg') ;
     background-size: cover ;
@@ -247,8 +249,8 @@
     .no-webp .hero {
         background:
             linear-gradient(135deg,
-                rgba(90, 185, 181, 0.68),
-                rgba(109, 181, 216, 0.63)
+                rgba(27, 73, 101, 0.72),
+                rgba(42, 95, 127, 0.68)
             ),
             url('../img/hero-terapia-autismo-tlaxcala.jpg') ;
         background-size: cover ;

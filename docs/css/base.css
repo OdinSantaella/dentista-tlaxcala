@@ -1,25 +1,32 @@
 /* ========================================
-   PLAYFUL OCEAN PALETTE - COLOR VARIABLES
+   DENTAL CLINIC COLOR PALETTE - Based on Dra. Elizabeth Logo
 ======================================== */
 :root {
-    /* Primary Colors */
+    /* Primary Colors (70%) - Turquoise */
+    --primary-color: #5AB9B5;
+    --primary-dark: #45A29E;
+    --primary-light: #66FCF1;
+
+    /* Secondary Colors (20%) - Navy */
+    --secondary-color: #1B4965;
+    --secondary-light: #2A5F7F;
+
+    /* Accent Color (10%) - Cyan */
+    --accent-color: #66FCF1;
+
+    /* Legacy color names for gradients */
     --turquoise: #5AB9B5;
-    --sky-blue: #6DB5D8;
-
-    /* Accent Colors */
-    --pastel-pink: #FFB3D9;
-    --cheerful-yellow: #FFD93D;
-
-    /* Secondary Color */
-    --lavender: #B8A9E8;
+    --sky-blue: #2A5F7F;
 
     /* Neutral Colors */
     --light-gray: #E8F4F8;
     --text-gray: #2B3A42;
+    --white: #FFFFFF;
 
     /* Predefined Gradients */
-    --gradient-header: linear-gradient(90deg, #5AB9B5, #6DB5D8);
-    --gradient-hero: linear-gradient(135deg, #FFB3D9, #B8A9E8);
+    --gradient-header: linear-gradient(90deg, #5AB9B5, #45A29E);
+    --gradient-hero: linear-gradient(135deg, #1B4965, #2A5F7F);
+    --gradient-button: linear-gradient(135deg, #5AB9B5, #45A29E);
 }
 
 /* ========================================

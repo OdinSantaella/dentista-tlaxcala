@@ -50,7 +50,7 @@
 
 .problems-section h2 {
     font-size: 42px;
-    color: #5AB9B5;
+    color: var(--secondary-color);
     margin-bottom: 20px;
     font-weight: bold;
 }
@@ -76,7 +76,7 @@
     background: white;
     padding: 30px;
     border-radius: 12px;
-    border-top: 4px solid #5AB9B5;
+    border-top: 4px solid var(--primary-color);
     box-shadow: 0 8px 30px rgba(0,0,0,0.06);
     display: flex;
     align-items: flex-start;
@@ -85,23 +85,23 @@
 }
 
 .problem-item:nth-child(2) {
-    border-top-color: #FFB3D9;
+    border-top-color: var(--primary-dark);
 }
 
 .problem-item:nth-child(3) {
-    border-top-color: #FFD93D;
+    border-top-color: var(--accent-color);
 }
 
 .problem-item:nth-child(4) {
-    border-top-color: #B8A9E8;
+    border-top-color: var(--secondary-light);
 }
 
 .problem-item:nth-child(5) {
-    border-top-color: #5AB9B5;
+    border-top-color: var(--primary-color);
 }
 
 .problem-item:nth-child(6) {
-    border-top-color: #FFB3D9;
+    border-top-color: var(--primary-dark);
 }
 
 .problem-item:hover {
@@ -110,7 +110,7 @@
 }
 
 .problem-item .check-icon {
-    color: #5AB9B5;
+    color: var(--primary-color);
     font-size: 24px;
     margin-top: 5px;
     flex-shrink: 0;
@@ -118,7 +118,7 @@
 
 .problem-item h3 {
     font-size: 20px;
-    color: #6DB5D8;
+    color: var(--secondary-color);
     margin-bottom: 10px;
 }
 
@@ -136,7 +136,7 @@
 
 .process-section h2 {
     font-size: 42px;
-    color: #5AB9B5;
+    color: var(--secondary-color);
     margin-bottom: 20px;
     font-weight: bold;
 }
@@ -176,8 +176,8 @@
     top: -20px;
     left: 50%;
     transform: translateX(-50%);
-    background: #FFD93D;
-    color: #2B3A42;
+    background: var(--primary-color);
+    color: white;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -190,13 +190,13 @@
 
 .process-step i {
     font-size: 2.5rem;
-    color: #6DB5D8;
+    color: var(--secondary-color);
     margin-bottom: 20px;
 }
 
 .process-step h3 {
     font-size: 24px;
-    color: #5AB9B5;
+    color: var(--secondary-color);
     margin-bottom: 15px;
 }
 
@@ -239,7 +239,7 @@
 .testimonials-section h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    color: #5AB9B5;
+    color: var(--secondary-color);
     font-weight: 600;
 }
 
@@ -262,7 +262,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #5AB9B5, #6DB5D8);
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -284,7 +284,7 @@
 .rating-value {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #5AB9B5;
+    color: var(--primary-color);
 }
 
 .rating-stars {
@@ -293,7 +293,7 @@
 }
 
 .rating-stars .star {
-    color: #FFD93D;
+    color: var(--accent-color);
     font-size: 1.2rem;
 }
 
@@ -351,12 +351,12 @@
 
 /* TESTIMONIAL CARDS */
 .testimonial-card {
-    background: #E8F4F8;
+    background: var(--light-gray);
     padding: 30px 25px;
     margin-bottom: 20px;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    border-left: 4px solid #5AB9B5;
+    border-left: 4px solid var(--primary-color);
     transition: transform 0.3s ease;
     text-align: left;
     min-height: 200px;
@@ -374,7 +374,7 @@
 }
 
 .testimonial-rating .star {
-    color: #FFD93D;
+    color: var(--accent-color);
     font-size: 1rem;
 }
 
@@ -394,7 +394,7 @@
 
 .testimonial-author strong {
     font-weight: 600;
-    color: #5AB9B5;
+    color: var(--primary-color);
     font-size: 0.95rem;
 }
 
@@ -433,22 +433,22 @@
     align-items: center;
     gap: 10px;
     background: white;
-    color: #FFB3D9;
+    color: var(--primary-color);
     padding: 15px 25px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
-    border: 2px solid #FFB3D9;
+    border: 2px solid var(--primary-color);
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 179, 217, 0.2);
+    box-shadow: 0 4px 15px rgba(90, 185, 181, 0.2);
 }
 
 .testimonials-cta-button:hover {
-    background: #FFB3D9;
+    background: var(--primary-color);
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(255, 179, 217, 0.3);
+    box-shadow: 0 8px 25px rgba(90, 185, 181, 0.3);
 }
 
 .testimonials-cta-button svg:last-child {
@@ -480,7 +480,7 @@
 
 /* ABOUT SECTION */
 .about-section {
-    background: #E8F4F8;
+    background: var(--light-gray);
     padding: 80px 40px;
 }
 
@@ -492,7 +492,7 @@
 
 .about-section a:focus,
 .about-section button:focus {
-    outline: 2px solid #5AB9B5;
+    outline: 2px solid var(--primary-color);
     outline-offset: 2px;
 }
 
@@ -507,7 +507,7 @@
 
 .about-content h2 {
     font-size: 42px;
-    color: #5AB9B5;
+    color: var(--secondary-color);
     margin-bottom: 20px;
     font-weight: bold;
     line-height: 1.2;
@@ -539,7 +539,7 @@
 }
 
 .about-features li i {
-    color: #5AB9B5;
+    color: var(--primary-color);
     margin-right: 15px;
     font-size: 18px;
     margin-top: 2px;
