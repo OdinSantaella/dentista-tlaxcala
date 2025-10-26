@@ -7,7 +7,7 @@
     background: linear-gradient(135deg, var(--light-gray) 0%, #F0F8FF 100%) !important;
     color: var(--text-gray) !important;
     padding: 60px 20px 30px;
-    margin-top: 60px;
+    margin-top: 0;
 }
 
 .footer-container {

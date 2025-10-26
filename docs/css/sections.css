@@ -480,7 +480,7 @@
 
 /* ABOUT SECTION */
 .about-section {
-    background: var(--light-gray);
+    background: white;
     padding: 80px 40px;
 }
 
