@@ -5,23 +5,39 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 40px;
+    padding: 12px 40px;
     position: sticky;
     top: 0;
     z-index: 100;
     backdrop-filter: saturate(180%) blur(20px);
-    background: #FFFFFF;
-    border-bottom: 2px solid #5AB9B5;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(232, 244, 248, 0.5));
+    border-bottom: 2px solid var(--turquoise);
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
     transition: all 0.3s ease;
 }
 
 .header.scrolled {
     box-shadow: 0 4px 20px rgba(90, 185, 181, 0.25);
+    padding: 8px 40px;
+}
+
+/* HEADER BRAND - Logo + Text */
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+    min-width: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 .logo img {
-    height: 70px;
+    height: 60px;
     width: auto;
     filter: drop-shadow(0 1px 3px rgba(0,0,0,0.1));
     transition: transform 0.3s ease;
@@ -29,6 +45,44 @@
 
 .logo:hover img {
     transform: scale(1.05);
+}
+
+/* BRAND TEXT */
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.brand-name {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, var(--turquoise), var(--sky-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 0.3s ease;
+}
+
+.brand-tagline {
+    font-size: 12px;
+    color: var(--text-gray);
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Hover effects para brand */
+.header-brand:hover .brand-name {
+    transform: translateX(2px);
+}
+
+.header-brand:hover .logo img {
+    transform: scale(1.08) rotate(2deg);
 }
 
 .nav-menu {
