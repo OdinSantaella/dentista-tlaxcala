@@ -135,18 +135,6 @@
     box-shadow: 0 6px 25px rgba(90, 185, 181, 0.5);
 }
 
-.btn-secondary {
-    background: white;
-    color: var(--primary-color);
-    border: 2px solid white;
-}
-
-.btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.9);
-    transform: translateY(-2px);
-    border-color: var(--accent-color);
-    color: var(--secondary-color);
-}
 
 
 @media (max-width: 768px) {
