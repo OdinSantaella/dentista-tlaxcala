@@ -57,10 +57,12 @@
         padding: 10px 20px;
         justify-content: space-between;
         flex-wrap: wrap;
+        gap: 20px;
     }
 
     .header-brand {
         gap: 12px;
+        flex: 1;
     }
 
     .logo img {
@@ -86,6 +88,7 @@
         font-size: 14px;
         border-radius: 25px;
         white-space: nowrap;
+        margin-left: 0;
     }
 
     /* Hero Section */
