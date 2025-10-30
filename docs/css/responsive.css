@@ -148,8 +148,9 @@
         margin-bottom: 30px;
     }
     .process-image img {
-        max-width: 100%;
+        max-width: 80%;
         border-radius: 12px;
+        max-height: 300px;
     }
     
     /* Testimonials Section */
@@ -243,7 +244,8 @@
     }
     
     .about-image {
-        min-height: 250px;
+        min-height: 200px;
+        max-height: 300px;
         font-size: 14px;
         order: -1;
         margin-bottom: 20px;
