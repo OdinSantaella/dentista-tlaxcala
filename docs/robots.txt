@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://odinsantaella.github.io/psicologia-infantil-tlaxcala/sitemap.xml
+Sitemap: https://dentistatlaxcala.mx/sitemap.xml
 
 # Block unnecesary files
 Disallow: /css/
