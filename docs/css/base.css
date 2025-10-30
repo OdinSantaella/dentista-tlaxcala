@@ -1,0 +1,69 @@
+/* ========================================
+   DENTAL CLINIC COLOR PALETTE - Based on Dra. Elizabeth Logo
+======================================== */
+:root {
+    /* Primary Colors (70%) - Turquoise */
+    --primary-color: #5AB9B5;
+    --primary-dark: #45A29E;
+    --primary-light: #66FCF1;
+
+    /* Secondary Colors (20%) - Navy */
+    --secondary-color: #1B4965;
+    --secondary-light: #2A5F7F;
+
+    /* Accent Color (10%) - Cyan */
+    --accent-color: #66FCF1;
+
+    /* Legacy color names for gradients */
+    --turquoise: #5AB9B5;
+    --sky-blue: #2A5F7F;
+
+    /* Neutral Colors */
+    --light-gray: #E8F4F8;
+    --text-gray: #2B3A42;
+    --white: #FFFFFF;
+
+    /* Predefined Gradients */
+    --gradient-header: linear-gradient(90deg, #5AB9B5, #45A29E);
+    --gradient-hero: linear-gradient(135deg, #1B4965, #2A5F7F);
+    --gradient-button: linear-gradient(135deg, #5AB9B5, #45A29E);
+}
+
+/* ========================================
+   RESET & BASE
+======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #2B3A42;
+    background: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.025em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}

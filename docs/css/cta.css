@@ -1,0 +1,273 @@
+/* ========================================
+   CTA SECTION
+======================================== */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    padding: 80px 40px;
+    text-align: center;
+    color: white;
+}
+
+.cta-section h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-section .hero-cta {
+    background: white;
+    color: var(--primary-color);
+    font-size: 20px;
+    padding: 20px 40px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.cta-section .hero-cta:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+.cta-button {
+    padding: 10px 24px ;
+    font-size: 18px ;
+    font-weight: 600 ;
+    color: white ;
+    background: var(--primary-color) ;
+    border: none ;
+    border-radius: 8px ;
+    cursor: pointer ;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2) ;
+    transition: all 0.3s ease-in-out ;
+    text-decoration: none ;
+    display: inline-block ;
+}
+
+.cta-button:hover {
+    background: var(--primary-dark) ;
+    transform: translateY(-3px) scale(1.05) ;
+    box-shadow: 0 10px 25px rgba(90, 185, 181, 0.4) ;
+}
+
+
+/* ========================================
+   FINAL CTA SECTION
+======================================== */
+.final-cta-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.final-cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.final-cta-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.final-cta-benefits {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.cta-benefit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.cta-benefit span:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.final-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.final-cta-buttons .btn {
+    padding: 18px 40px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.final-cta-buttons .btn-primary {
+    background: white;
+    color: var(--primary-color);
+    border: 2px solid white;
+    font-weight: 600;
+}
+
+.final-cta-buttons .btn-primary:hover {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+.final-cta-buttons .btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    font-weight: 600;
+}
+
+.final-cta-buttons .btn-secondary:hover {
+    background: white;
+    color: var(--primary-color);
+    border-color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    /* CTA Section Mobile */
+    .cta-section {
+        padding: 40px 20px 50px;
+    }
+
+    .cta-section h2 {
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+
+    .cta-section p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .cta-section .hero-cta {
+        font-size: 16px;
+        padding: 14px 32px;
+        display: inline-block;
+    }
+
+    /* Final CTA Section Mobile */
+    .final-cta-section {
+        padding: 50px 20px;
+    }
+
+    .final-cta-section h2 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .final-cta-subtitle {
+        font-size: 15px;
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+
+    .final-cta-benefits {
+        flex-direction: column;
+        gap: 12px;
+        padding: 0 10px;
+    }
+
+    .cta-benefit {
+        font-size: 14px;
+        justify-content: center;
+    }
+
+    .final-cta-buttons {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .final-cta-buttons .btn {
+        width: 100%;
+        padding: 14px 24px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* CTA Section Extra Small */
+    .cta-section {
+        padding: 35px 15px 45px;
+    }
+
+    .cta-section h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .cta-section p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .cta-section .hero-cta {
+        font-size: 15px;
+        padding: 12px 28px;
+    }
+
+    /* Final CTA Section Extra Small */
+    .final-cta-section {
+        padding: 40px 15px;
+    }
+
+    .final-cta-section h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .final-cta-subtitle {
+        font-size: 13px;
+        margin-bottom: 25px;
+        padding: 0 5px;
+    }
+
+    .final-cta-benefits {
+        gap: 10px;
+        padding: 0 5px;
+    }
+
+    .cta-benefit {
+        font-size: 12px;
+    }
+
+    .cta-benefit span:first-child {
+        font-size: 16px;
+    }
+
+    .final-cta-buttons {
+        padding: 0 5px;
+    }
+
+    .final-cta-buttons .btn {
+        padding: 12px 20px;
+        font-size: 13px;
+    }
+}
+

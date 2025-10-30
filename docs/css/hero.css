@@ -1,0 +1,310 @@
+/* ========================================
+   HERO
+======================================== */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background:
+        linear-gradient(135deg,
+            rgba(27, 73, 101, 0.65),
+            rgba(42, 95, 127, 0.60)
+        ),
+        url('../img/consultorio-dentista-elizabeth-tlaxcala.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.animated-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    animation: float 20s infinite ease-in-out;
+}
+
+.shape:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.shape:nth-child(2) {
+    width: 120px;
+    height: 120px;
+    top: 60%;
+    left: 80%;
+    animation-delay: 3s;
+}
+
+.shape:nth-child(3) {
+    width: 60px;
+    height: 60px;
+    top: 40%;
+    left: 70%;
+    animation-delay: 6s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    33% { transform: translateY(-30px) translateX(20px); }
+    66% { transform: translateY(20px) translateX(-20px); }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 .highlight {
+    color: #FFD93D;
+    position: relative;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 25px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cta-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+
+.btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', 'Inter', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color);
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(90, 185, 181, 0.5);
+}
+
+
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 85vh;
+        background:
+            linear-gradient(135deg,
+                rgba(27, 73, 101, 0.65),
+                rgba(42, 95, 127, 0.60)
+            ),
+            url('../img/consultorio-dentista-elizabeth-tlaxcala.webp') ;
+        background-size: cover ;
+        background-position: center ;
+        background-repeat: no-repeat ;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 15px 30px;
+        font-size: 16px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cta-container {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+}
+
+/* ========================================
+   TRUST BAR SECTION
+======================================== */
+.trust-section {
+    background: var(--light-gray);
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.trust-section h2 {
+    font-size: 36px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.trust-section .section-subtitle {
+    font-size: 18px;
+    color: var(--text-gray);
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trust-bar {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.trust-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.trust-item:hover {
+    transform: translateY(-5px);
+}
+
+.trust-icon {
+    font-size: 32px;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.trust-text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--text-gray);
+}
+
+.trust-text strong {
+    display: block;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+/* Fallback para navegadores sin WebP */
+.no-webp .hero {
+    background:
+        linear-gradient(135deg,
+            rgba(27, 73, 101, 0.65),
+            rgba(42, 95, 127, 0.60)
+        ),
+        url('../img/consultorio-dentista-elizabeth-tlaxcala.jpg') ;
+    background-size: cover ;
+    background-position: center ;
+    background-repeat: no-repeat ;
+}
+
+@media (max-width: 768px) {
+    .no-webp .hero {
+        background:
+            linear-gradient(135deg,
+                rgba(27, 73, 101, 0.65),
+                rgba(42, 95, 127, 0.60)
+            ),
+            url('../img/consultorio-dentista-elizabeth-tlaxcala.jpg') ;
+        background-size: cover ;
+        background-position: center ;
+        background-repeat: no-repeat ;
+    }
+
+    .trust-section {
+        padding: 40px 15px;
+    }
+
+    .trust-section h2 {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+
+    .trust-section .section-subtitle {
+        font-size: 16px;
+        margin-bottom: 35px;
+    }
+
+    .trust-bar {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 20px 15px;
+    }
+
+    .trust-item {
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .trust-icon {
+        font-size: 26px;
+    }
+
+    .trust-text {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .trust-text strong {
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+}
