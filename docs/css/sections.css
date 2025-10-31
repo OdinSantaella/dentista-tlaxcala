@@ -36,26 +36,26 @@
     box-shadow: 0 18px 40px rgba(0,0,0,0.1);
 }
 
-/* PROBLEMS SECTION */
-.problems-section {
+/* SERVICES SECTION */
+.services-section {
     padding: 80px 40px;
     background: #ffffff;
 }
 
-.problems-section .container {
+.services-section .container {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
 
-.problems-section h2 {
+.services-section h2 {
     font-size: 42px;
     color: var(--secondary-color);
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-.problems-section .lead {
+.services-section .lead {
     color: #2B3A42;
     font-size: 20px;
     margin-bottom: 50px;
@@ -64,7 +64,7 @@
     margin-right: auto;
 }
 
-.problems-grid {
+.services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
@@ -72,7 +72,7 @@
     text-align: left;
 }
 
-.problem-item {
+.service-item {
     background: white;
     padding: 30px;
     border-radius: 12px;
@@ -84,47 +84,54 @@
     transition: transform 0.3s ease;
 }
 
-.problem-item:nth-child(2) {
+.service-item:nth-child(2) {
     border-top-color: var(--primary-dark);
 }
 
-.problem-item:nth-child(3) {
+.service-item:nth-child(3) {
     border-top-color: var(--accent-color);
 }
 
-.problem-item:nth-child(4) {
+.service-item:nth-child(4) {
     border-top-color: var(--secondary-light);
 }
 
-.problem-item:nth-child(5) {
+.service-item:nth-child(5) {
     border-top-color: var(--primary-color);
 }
 
-.problem-item:nth-child(6) {
+.service-item:nth-child(6) {
     border-top-color: var(--primary-dark);
 }
 
-.problem-item:hover {
+.service-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 40px rgba(0,0,0,0.10);
 }
 
-.problem-item .check-icon {
+.service-item .check-icon {
     color: var(--primary-color);
     font-size: 24px;
     margin-top: 5px;
     flex-shrink: 0;
 }
 
-.problem-item h3 {
+.service-item h3 {
     font-size: 20px;
     color: var(--secondary-color);
     margin-bottom: 10px;
 }
 
-.problem-item p {
+.service-item p {
     color: #2B3A42;
     line-height: 1.6;
+}
+
+.service-item .price {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 /* PROCESS SECTION */
