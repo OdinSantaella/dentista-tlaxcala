@@ -137,6 +137,15 @@
 
 
 
+/* Mostrar texto completo por defecto, ocultar corto */
+.btn-text-short {
+    display: none;
+}
+
+.btn-text-full {
+    display: inline;
+}
+
 @media (max-width: 768px) {
     .hero {
         min-height: 85vh;
@@ -164,6 +173,21 @@
         font-size: 16px;
         width: 100%;
         justify-content: center;
+    }
+
+    /* Ocultar texto largo en mobile, mostrar corto */
+    .btn-text-full {
+        display: none;
+    }
+
+    .btn-text-short {
+        display: inline;
+    }
+
+    /* Hacer el icono de WhatsApp más grande en mobile */
+    .hero-cta-button .whatsapp-icon {
+        width: 28px;
+        height: 28px;
     }
 
     .cta-container {
