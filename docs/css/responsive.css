@@ -104,42 +104,42 @@
     }   
    
     
-    /* Problems Section */
-    .problems-section { 
-        padding: 50px 20px; 
+    /* Services Section */
+    .services-section {
+        padding: 50px 20px;
     }
-    
-    .problems-section h2 { 
-        font-size: 28px; 
-        margin-bottom: 15px; 
+
+    .services-section h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
     }
-    
-    .problems-section .lead { 
-        font-size: 16px; 
-        margin-bottom: 30px; 
+
+    .services-section .lead {
+        font-size: 16px;
+        margin-bottom: 30px;
     }
-    
-    .problems-grid { 
-        gap: 15px; 
+
+    .services-grid {
+        gap: 15px;
     }
-    
-    .problem-item { 
-        padding: 20px 15px; 
-        gap: 15px; 
+
+    .service-item {
+        padding: 20px 15px;
+        gap: 15px;
     }
-    
-    .problem-item .check-icon { 
-        font-size: 20px; 
+
+    .service-item .check-icon {
+        font-size: 20px;
     }
-    
-    .problem-item h3 { 
-        font-size: 18px; 
-        margin-bottom: 8px; 
+
+    .service-item h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
     }
-    
-    .problem-item p { 
-        font-size: 14px; 
-        line-height: 1.4; 
+
+    .service-item p {
+        font-size: 14px;
+        line-height: 1.4;
     }
 
     /* Process Section */
@@ -392,12 +392,12 @@
     }
     
     /* Spacing Utilities */
-    .problems-section,
-    .problems-section + .process-section,
+    .services-section,
+    .services-section + .process-section,
     .process-section + .testimonials-section,
     .testimonials-section + .cta-section,
-    .cta-section + .about-section { 
-        margin-top: -20px; 
+    .cta-section + .about-section {
+        margin-top: -20px;
     }
     
     .lead {
@@ -453,26 +453,26 @@
         min-width: 180px;
     }
     
-    /* Problems Section */
-    .problems-section { 
-        padding: 40px 15px; 
+    /* Services Section */
+    .services-section {
+        padding: 40px 15px;
     }
-    
-    .problems-section h2 { 
-        font-size: 24px; 
+
+    .services-section h2 {
+        font-size: 24px;
     }
-    
-    .problem-item { 
-        padding: 18px 12px; 
-        gap: 12px; 
+
+    .service-item {
+        padding: 18px 12px;
+        gap: 12px;
     }
-    
-    .problem-item h3 { 
-        font-size: 16px; 
+
+    .service-item h3 {
+        font-size: 16px;
     }
-    
-    .problem-item p { 
-        font-size: 13px; 
+
+    .service-item p {
+        font-size: 13px;
     }
     
     /* Process Section */
@@ -665,13 +665,13 @@
     }    
    
     
-    /* Problems Section */
-    .problems-section { 
-        padding: 35px 12px; 
+    /* Services Section */
+    .services-section {
+        padding: 35px 12px;
     }
-    
-    .problem-item { 
-        padding: 15px 10px; 
+
+    .service-item {
+        padding: 15px 10px;
     }
     
     /* Process Section */
